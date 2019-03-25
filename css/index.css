@@ -325,6 +325,10 @@ footer {
   background: white;
   color: black;
 }
+.services-button:hover {
+    background: black;
+    color: white;
+}
 .fact-list {
 	margin-top: 25px;
 	list-style-type: square;
@@ -374,6 +378,10 @@ footer {
   background: white;
   color: black;
 }
+.products-button:hover {
+    background: black;
+    color: white;
+}
 .fact-list {
 	margin-top: 25px;
 	list-style-type: square;
@@ -402,7 +410,6 @@ footer {
 /* Tablet styling begins here */
 @media (max-width: 800px) {
     .container {
-        /* TB LR */
         margin: 0 auto;      
     }
     header {
@@ -413,35 +420,37 @@ footer {
         align-items: center;
     }
     header a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 50px;
     }
     header a img {
         justify-content: center;
         align-items: center;
     }
      header nav {
+        width: 100%;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
      }  
     header nav a {
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         font-size: 24px;
         color: gray;
         text-decoration: none;
-        margin: 0;
+        margin: 0 5px 0 5px;
         padding: 15px;
     }   
     .cta img {
         display: none;
     }
     .middle-img {
-    width: 100%;
+        width: 100%;
+        padding: 5px;
     }
     .cta-text {
         margin: 0 auto;
@@ -471,9 +480,6 @@ footer {
     .products-info-img-bottom {
         display: none;
     }
-    .products-info-img {
-        display: none;
-    }
     .products-sub {
         justify-content: center;
         align-items: center;
@@ -491,7 +497,6 @@ footer {
 /* Phone styling begins here */
 @media (max-width: 500px) {
     .container {
-        /* TB LR */
         margin: 0 auto;      
     }
     header {
@@ -520,16 +525,24 @@ footer {
         justify-content: center;
     } 
     header nav a {
+        width: 100%;
         align-items: center;
         font-size: 24px;
         color: gray;
         text-decoration: none;
+        margin: 0;
         padding: 30px;
         border-bottom: 0.5px solid grey;
     }
 
     header nav a:first-child {
         border-top: 1px solid grey;
+    }
+
+    header nav a:hover {
+        background: grey;
+        color: white;
+        text-decoration: none;
     }
     
     .cta img {
@@ -538,6 +551,7 @@ footer {
     
     .middle-img {
         width: 100%;
+        padding: 0;
     }
 
     .top-content {
@@ -547,10 +561,10 @@ footer {
     .bottom-content {
         display: flex;
         flex-flow: row wrap;
-        width: 100%;
     }
     .text-content {
-        margin: 10% 0;
+        width: 100%;
+        margin: 5% 0;
     }
 /*Phone Services styling begins here */
 
@@ -563,14 +577,15 @@ footer {
     .products-info-img-bottom {
         display: none;
     }
-    .prodcuts-info-img {
-        display: block;
+    .products-info-img {
+        display: none;
     }
     .products-sub {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-  
     .products-intro {
         justify-content:center;
         align-items:center;
