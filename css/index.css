@@ -133,10 +133,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
+  max-width: 880px;
   /* TB LR */
-  margin: 0 auto;  
-  
+  margin: 0 auto;   
 }
 
 /* header */
@@ -398,4 +397,47 @@ footer {
 	border-radius: 15px;
 	margin-bottom: 25px;
 	margin-left: 50px;
+}
+/* Tablet styling begins here */
+/* Phone styling begins here */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        /* TB LR */
+        margin: 0 auto;      
+    }
+
+     header nav {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+      } 
+      
+     header nav a {
+        font-size: 14px;
+        color: gray;
+        text-decoration: none;
+        margin: 0;
+      }
+      
+      .cta img {
+        display: none;
+      }
+      
+      .middle-img {
+        width: 100%;
+      }
+
+      .top-content {
+        display: flex;
+        flex-flow: column wrap;
+      }
+      .bottom-content {
+        display: flex;
+        flex-flow: column wrap;
+      }
+      .text-content {
+        margin: 10% 0;
+      }
 }
